@@ -1,11 +1,13 @@
 nome = input('Informe o nome: ')
 idade = int(input('Informe a idade :'))
-genero = input('Infome o gênero (Masculino/Feminino) :')
+genero = input('Infome o gênero (Masculino/Feminino) : ')
 genero_upper = genero.upper()
-if genero_upper == MASCULINO:
+if genero_upper == 'MASCULINO':
     genero = 'M'
-else:
+elif genero_upper == 'FEMININO':
     genero = 'F'
+else:
+    print('Genero incorreto')
 
 
 if idade > 50:
