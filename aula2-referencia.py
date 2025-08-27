@@ -55,3 +55,4 @@ print(meu_dicionario)
 meu_dicionario = {"nome" : "Camila", "idade" : 29}
 print(meu_dicionario["nome"])
 #meu_dicionario = ["cidade"] = "Rio de Janeiro"
+
