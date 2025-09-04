@@ -22,15 +22,16 @@ class Moto(Veiculo):
         print('Moto empinando')
 
 class Carro(Veiculo):
-    def __init__(self, chassi, marca, cor, ano_fabricacao, tipo_combustivel, preco_diaria, tipo_cambio, quant_portas):
+    def __init__(self, chassi, marca, cor, ano_fabricacao, tipo_combustivel, preco_diaria, tipo_cambio, quant_lugares, potencia_motor):
         super().__init__(chassi, marca, cor, ano_fabricacao, tipo_combustivel, preco_diaria)
         self.tipo_cambio = tipo_cambio
-        self.quant_portas = quant_portas
+        self.quant_lugares = quant_lugares
+        self.potencia_motor = potencia_motor
 
 class Caminhao(Veiculo):
-    def __init__(self, chassi, marca, cor, ano_fabricacao, tipo_combustivel, preco_diaria, quant_eixos, tipo_carroceria, tipo_cambio, peso):
+    def __init__(self, chassi, marca, cor, ano_fabricacao, tipo_combustivel, preco_diaria, quant_eixos, tipo_carroceria, tipo_cambio, capacidade_carga):
         super().__init__(chassi, marca, cor, ano_fabricacao, tipo_combustivel, preco_diaria)    
         self.quant_eixos = quant_eixos
         self.tipo_carroceria = tipo_carroceria
         self.tipo_cambio = tipo_cambio
-        self.peso = peso
+        self.capacidade_carga = capacidade_carga
