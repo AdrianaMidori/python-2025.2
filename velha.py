@@ -37,7 +37,7 @@ class Velha():
                 lista.append(itemColuna)
 
             #Se os elementos da lista são iguais, houve vencedor
-            if (lista[0] != ' ') and (lista[0] == lista[1]) and (lista[0] == lista[2]):
+            if (lista[0] != ' ') and (lista[0] == lista[1] == lista[2]):
                 self.vencedor = lista[0]
                 return True
             lista =[]
@@ -50,7 +50,7 @@ class Velha():
             for linha in range(3):
                 lista.append(self.tabuleiro[linha][coluna])
                 
-            if (lista[0] != ' ') and (lista[0] == lista[1]) and (lista[0] == lista[2]):
+            if (lista[0] != ' ') and (lista[0] == lista[1] == lista[2]):
                 self.vencedor = lista[0]
                 return True
             lista = [] 
@@ -58,16 +58,12 @@ class Velha():
 
     def verVencedorNasDiagonais(self):
         if (self.tabuleiro[0][0] != ' ') and \
-            (self.tabuleiro[0][0]==self.tabuleiro[1][1]) and \
-            (self.tabuleiro[0][0]== self.tabuleiro[2][2]):
-
+            (self.tabuleiro[0][0] == self.tabuleiro[1][1] == self.tabuleiro[2][2]):
             self.vencedor = self.tabuleiro[0][0]
             return True
         
         if (self.tabuleiro[0][2] != ' ') and \
-            (self.tabuleiro[0][2]==self.tabuleiro[1][1]) and \
-            (self.tabuleiro[0][2]== self.tabuleiro[2][0]):
-            
+            (self.tabuleiro[0][2]==self.tabuleiro[1][1] == self.tabuleiro[2][0]):
             self.vencedor = self.tabuleiro[0][2]
             return True
         
