@@ -1,11 +1,21 @@
 from velhaDoProfessor import Velha
 
+def mostrarResultado(resultado):
+    if resultado ['X']:
+        print('X venceu!')
+
+    if resultado ['O']:
+        print('O venceu!')
+
+    if not jogo.verificarEspaco():
+        print('Jogo empatou!')
+
 jogo = Velha()
 
-while jogo.verificarEspaco():
-    # Desenha o tabuleiro inicial
-    jogo.desenharTabuleiro()
+# Desenha o tabuleiro inicial
+jogo.desenharTabuleiro()
 
+while jogo.verificarEspaco():
     while True:
         # Jogada do humano
         jogadaLinha = int(input('Digite a linha: '))
@@ -15,8 +25,13 @@ while jogo.verificarEspaco():
             jogo.tabuleiro[jogadaLinha][jogadaColuna] = 'X'
             break
 
+    #Verificação do vencedor
+    resultado = jogo.verificarVencedor()
     jogo.desenharTabuleiro()
-
+    mostrarResultado(resultado)
+    if jogo.ganhador:
+        break
+    
     while True:
         # Jogada da máquina
         jogadaLinha = jogo.jogarMaquina()
@@ -27,13 +42,14 @@ while jogo.verificarEspaco():
             print('Máquina jogou')
             break
 
+    #Verificação do vencedor
+    resultado = jogo.verificarVencedor()
+    jogo.desenharTabuleiro()
+    mostrarResultado(resultado)
+    if jogo.ganhador:
+        break
+
     jogo.desenharTabuleiro()
 
 
-resultado = jogo.verificarVencedor()
-if resultado['X']:
-    print('X venceu')
-elif resultado['O']:
-    print('O venceu')
-else:
-    print('Empate')
+
