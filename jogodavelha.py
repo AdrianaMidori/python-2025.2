@@ -43,13 +43,11 @@ while True:
     # Jogada da Máquina
     temEspaco = jogo.verEspacoNoTabuleiro() 
     if temEspaco:  
-        jogadaLinha = jogo.jogarMaquina()
-        jogadaColuna = jogo.jogarMaquina()  
-
-        #Caso seja sorteado uma posição já preenchida, continuar sorteando nova posição
-        while (jogo.tabuleiro[jogadaLinha][jogadaColuna] != ' '):
+        while True:
             jogadaLinha = jogo.jogarMaquina()
-            jogadaColuna = jogo.jogarMaquina()
+            jogadaColuna = jogo.jogarMaquina() 
+            if jogo.tabuleiro[jogadaLinha][jogadaColuna] == ' ':
+                break
 
         jogo.receberJogada(jogadaLinha, jogadaColuna, 'O')
         print("Máquina jogou")
