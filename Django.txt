@@ -1,0 +1,75 @@
+Django
+
+Ver a documentação e mais informações sobre o Django no site:
+www.djangoproject.com
+
+O Django é um framework feito em Python, ele deve ser instalado em cada "ambiente" do projeto.
+
+É conveniente que se crie um ambiente virtual para cada projeto, esse ambiente virtual isola um projeto de outro.
+Ele é criado para caso se esteja trabalhando em dois projetos diferentes com versões diferentes dos softwares utilizados.
+Por exemplo, diferentes versões das linguagens ou dos frameworks.
+Geralmente chamamos o ambiente virtual de env, que vem de "enviroment".
+Para criar o ambiente virtual deve-se estar na pasta do projeto.
+
+Abrir o VSCode
+
+Usar o terminal GitBash. O Power Shell pode dar algum problema ao executar os comandos.
+Para entrar no GitBash do VSCode, clicar na "setinha" para baixo que fica ao lado do sinal de + da tela do terminal.
+
+"""No terminal GitBash - Comando que verifica se tem o programa que cria o ambiente virtual 
+$ where virtualenv
+
+"""Se não estiver instalado, instalá-lo com o comando
+$ pip install virtualenv 
+
+"""Após instalado, criar o ambiente virtual "env", pode ser usado qualquer nome, mas env é o recomendado
+$ virtualenv env
+
+Caso dê problema nesse comando, deve-se adicionar o caminho de onde o arquivo virtualenv.exe foi instalado no PATH do Windows.
+Passo a passo:
+Painel de controle do Windows -> Sistema e Segurança -> Sistema -> Configurações Avançadas -> Propriedades do Sistema -> Variáveis do Sistema
+Deve-se acrescentar o caminho no Path. Caso haja outros caminhos, não substituí-los.
+Reestartar o computador para o Windows carregar as alterações.
+
+"""Para ver se o ambiente virtual "env" foi instalado no diretório
+$ls 
+
+"""Ativar o ambiente virtual (No Windows)
+$ source/Scripts/activate
+
+"""Ativar o ambiente virtual (no Mac)
+$ source/bin/activate
+
+****Importante
+"""Para subir o projeto pro GitHub o ambiente virtual deve ser desativado ou ele irá mandar para o GitHub um monte de arquivos desnecessários
+
+$ deactivate
+
+""" Instalar as dependências (Django framework) na versão 3.0.0
+""" Caso não seja colocado ==3.0.0, o pip instalará a última versão do Django
+""" pip é um intalador de pacotes
+
+$ pip install Django==3.0.0
+
+"""Iniciando o projeto
+***Importante
+""" Sempre verificar se vc está no diretório do seu projeto e se está com o env ativo
+""" O ambiente virtual estará ativo se antes do prompt de comando tiver (env)
+
+$ django-admin startproject nomedoprojeto .
+
+"""Após o nomedoprojeto existe um espaço e um ponto (Esse ponto é importantíssimo)
+
+"""Para inicializar o servidor web
+
+$ python manage.py runserver
+
+CTRL+C para parar o servidor
+
+
+
+
+
+
+
+
