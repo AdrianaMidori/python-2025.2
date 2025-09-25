@@ -29,21 +29,24 @@ Caso dê problema nesse comando, deve-se adicionar o caminho de onde o arquivo v
 Passo a passo:
 Painel de controle do Windows -> Sistema e Segurança -> Sistema -> Configurações Avançadas -> Propriedades do Sistema -> Variáveis do Sistema
 Deve-se acrescentar o caminho no Path. Caso haja outros caminhos, não substituí-los.
-Reestartar o computador para o Windows carregar as alterações.
+Reiniciar o computador para o Windows carregar as alterações.
 
 """Para ver se o ambiente virtual "env" foi instalado no diretório
 $ls 
 
 """Ativar o ambiente virtual (No Windows)
-$ source/Scripts/activate
+$ source env/Scripts/activate
 
 """Ativar o ambiente virtual (no Mac)
-$ source/bin/activate
+$ source env/bin/activate
 
 ****Importante
 """Para subir o projeto pro GitHub o ambiente virtual deve ser desativado ou ele irá mandar para o GitHub um monte de arquivos desnecessários
 
 $ deactivate
+
+
+Para instalar o Django deve-se estar no diretório do projeto e com o ambiente virtual ativado
 
 """ Instalar as dependências (Django framework) na versão 3.0.0
 """ Caso não seja colocado ==3.0.0, o pip instalará a última versão do Django

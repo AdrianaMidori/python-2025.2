@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Rio Antigo - Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- define e insere um favicon no documento HTML -->
+    <link href="img/logo-rioantigo-ico.ico" rel="shortcut icon">
+
+    <!-- versao gratuita do Font Awesome icons-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="css/meu-estilo-bs.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- seu codigo comeca aqui -->
+
+    <header class="container">
+        <div class="row border-bottom border-primary text-center bg-light">
+            <div class="col">
+                <h1>Histórios do Rio Antigo</h1>
+            </div>
+        </div>
+    
+        <div class="row mt-4 mb-4 text-center">
+            <div class="col">
+                <a href="imagens_bs.html" class="btn btn-info btn-lg" role="button">Imagens</a>                
+                <a href="index.html" class="btn btn-info btn-lg" role="button">Estórias</a>
+                <a href="locais_bs.html" class="btn btn-info btn-lg" role="button">Locais</a>
+                <a href="contato_bs.html" class="btn btn-info btn-lg" role="button">Contato</a>
+                <a href="sobre_bs.html" class="btn btn-info btn-lg" role="button">Sobre</a>
+            </div>
+        </div>        
+      
+    </header>
+
+    <main class="container w-75 mx-auto my-font-family">
+        <div class="row">
+            <div class="col text-center m-0">
+                <h2 class="mt-2 mb-0 my-h2">Locais do Rio Antigo</h2>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table
+                          table-bordeless
+                          text-center
+                          my-table-th
+                          my-table-td-first-child
+                          my-table-border-bottom
+                          my-table-hover
+                          my-table-td-vertical-align
+                          w-auto">
+
+                <thead>
+                    <tr>
+                        <th>Local</th>
+                        <th>Objetivo</th>
+                        <th>Período</th>
+                        <th>Imagem</th>
+                        <th><i class="fas fa-search"></i></th>
+                    </tr>
+                </thead>
+
+                <!-- linhas -->
+                <tbody>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Aterro do Flamengo</td>
+                        <td>Complexo de lazer da cidade do Rio de Janeiro.</td>
+                        <td>1940</td>
+                        <td><img src="img/aterro-do-flamengo-1940-41.jpg" alt="Aterro do Flamengo" height="70"
+                                width="70" class="img-fluid img-thumbnail">
+                        </td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalAterroDoFlamengo"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Flamengo</td>
+                        <td>Bairro conhecido por seu amplo parque de mesmo nome, com locais para piquenique, concertos
+                            ao ar livre e pistas de corrida ao longo da praia.</td>
+                        <td>1940</td>
+                        <td><img src="img/rio-de-janeiro-flamengo-1940.jpg" alt="Bairro Flamengo" height="70" width="70"
+                            class="img-fluid img-thumbnail">
+                        </td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalFlamengo"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Copacabana</td>
+                        <td>Famosa pela praia em forma de meia-lua e um dos bairros mais animados do Rio.</td>
+                        <td>1940</td>
+                        <td><img src="img/copacabana-1940.jpg" alt="Copacabana" 
+                            height="70" width="70" class="img-fluid img-thumbnail"></td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalCopacabana"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Praia de Copacabana</td>
+                        <td>Copacabana é uma das praias mais emblemáticas do Brasil.</td>
+                        <td>1940</td>
+                        <td><img src="img/praia-copacabana-1940.jpg" alt="Copacabana" height="70" width="70"
+                            class="img-fluid img-thumbnail"></td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalPraiaCopacabana"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Vista Chinesa</td>
+                        <td>A Vista Chinesa é um mirante em estilo chinês localizado no bairro do Alto da Boa Vista.
+                        </td>
+                        <td>1940</td>
+                        <td><img src="img/vista-chinesa-1940.jpg" alt="Vista Chinesa" height="70" width="70"
+                            class="img-fluid img-thumbnail"></td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalVistaChinesa"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Central do Brasil</td>
+                        <td>É uma das mais famosas estações de trens do Brasil que até o ano de 1998 se chamava Estação
+                            Dom
+                            Pedro II.</td>
+                        <td>1940</td>
+                        <td><img src="img/centra-brasil-1940.jpg" alt="Central do Brasil" height="70" width="70"
+                            class="img-fluid img-thumbnail"></td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalCentralDoBrasil"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Senado Federal</td>
+                        <td>Antigo Senado Federal localizado no centro do Rio de Janeiro.</td>
+                        <td>1940</td>
+                        <td><img src="img/senado-federal.jpg" alt="Senado Federal" height="70" width="70"
+                            class="img-fluid img-thumbnail">
+                        </td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalSenadoFederal"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Cinelândia</td>
+                        <td>Nome popular da região do entorno da Praça Floriano, no centro da cidade do Rio de Janeiro.
+                        </td>
+                        <td>1940</td>
+                        <td><img src="img/cinelandia.jpg" alt="Cinelândia" height="70" width="70"
+                            class="img-fluid img-thumbnail"></td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalCinelandia"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Teatro Municipal</td>
+                        <td>O Theatro Municipal do Rio de Janeiro é um dos mais importantes teatros brasileiros.
+                            Localiza-se na Cinelândia, centro da cidade do Rio de Janeiro.</td>
+                        <td>1940</td>
+                        <td><img src="img/teatro-municipal-rj-1940.jpg" alt="Teatro Municipal" height="70" width="70"
+                            class="img-fluid img-thumbnail">
+                        </td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalTeatroMunicipal"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Avenida Beira Mar</td>
+                        <td>Localizada na orla do centro do Rio de Janeiro, foi idealizada quando Pereira Passos era
+                            prefeito do Rio e Rodrigues Alves presidia o Brasil.</td>
+                        <td>1940</td>
+                        <td><img src="img/av-beira-mar.jpg" alt="Av. Beira Mar" height="70" width="70"
+                            class="img-fluid img-thumbnail" ></td>
+                        <td>
+                            <button type="button" class="btn" role="button" data-target="#modalBeiraMar"
+                                data-toggle="modal" href="#">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="container">
+        <div class="row border-top border-primary bg-light">
+            <div class="col">
+                <h5 class="text-center">Fontes</h5>
+                <p class="text-justify px-4">Esta página foi montada a partir do trabalho de <a
+                        href="https://theurbanearth.wordpress.com/2009/02/24/rio-de-janeiro-anos-40/"
+                        target="_blank"><span class="font-weight-bold">Cecília Lucchese</span></a>,
+                    disponível através do blog
+                    <a href="https://theurbanearth.wordpress.com/" target="_blank"><span class="font-weight-bold">THE
+                            URBAN EARTH - Reflexões de um mundo urbanizado de sua autoria</span></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- modais -->
+    <div class="modal fade" id="modalAterroDoFlamengo" role="dialog" aria-labelledby="Aterro do Flamengo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Aterro do Flamengo</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        A característica mais marcante do Parque Eduardo Gomes é a diversidade de sua flora, formada, principalmente, por espécies nativas selecionadas por Burle Marx. A riqueza vegetal atrai muitas aves.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFlamengo" role="dialog" aria-labelledby="Bairro do Flamengo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Flamengo</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Bairro conhecido por seu amplo parque de mesmo nome, com locais para piquenique, concertos ao ar
+                        livre e pistas de corrida.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCopacabana" role="dialog" aria-labelledby="Copacabana" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Copacabana</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        O reveillon de Copacabana reúne grande público e conta com ampla queima de fogos de artifício, motivo porque é considerado um dos maiores do mundo.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPraiaCopacabana" role="dialog" aria-labelledby="Praia de Copacabana" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Praia de Copacabana</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Em razão da projeção internacional como cartão-postal e destino turístico, recebeu, no decorrer dos anos, a alcunha de "princesinha do mar".
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalVistaChinesa" role="dialog" aria-labelledby="Vista Chinesa" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Vista Chinesa</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        O pagode em estilo oriental foi construído entre 1902 e 1906 e faz referência em homenagem aos chineses que trouxeram o cultivo do chá para o Brasil no início do século XIX.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCentralDoBrasil" role="dialog" aria-labelledby="Central do Brasil" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Central do Brasil</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        No Século XIX, era a estação inicial da Estrada de Ferro Dom Pedro II, sistema que se estendia até os estados de Minas Gerais e São Paulo.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSenadoFederal" role="dialog" aria-labelledby="Senado Federal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Senado Federal</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Chamado de Palácio Monroe, abrigou o Senado Federal entre 1925 e 1960, quando foi transferido para Brasília.
+                        Sua primeira sede foi o Palácio do Conde dos Arcos, também localizado no Rio de Janeiro. 
+                        Lá funcionou a câmara alta até 1925.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalCinelandia" role="dialog" aria-labelledby="Cinelandia" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Cinelândia</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        O nome Cinelândia se tornou popular a partir dos anos 30. Dezenas de teatros, boates, bares e restaurantes instalaram-se na região, tornando-a referência em matéria de diversão popular.
+                        Ainda é palco de manifestações políticas, algumas entre as mais importantes da história do Brasil.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTeatroMunicipal" role="dialog" aria-labelledby="Teatro Municipal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Teatro Municipal</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Foi inaugurado em 14 de julho de 1909 durante a prefeitura de Souza Aguiar, mas sua obra foi iniciada no governo anterior de Pereira Passos, fazendo parte do conjunto arquitetônico das obras de reurbanização do Rio de Janeiro e abertura da Avenida Central.
+                        Apesar do nome, o teatro não pertence ao município, mas está vinculado ao estado do Rio de Janeiro.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBeiraMar" role="dialog" aria-labelledby="Beira Mar" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title my-border-bottom my-color-purple meu-h5-font-size">Beira Mar</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">
+                        Foi inaugurada em 1906 durante o auge das modernizações promovidas na cidade e suas obras seguiram até o ano seguinte. 
+                        O primeiro pedaço dessa construção ligava Botafogo até o Obelisco na Avenida Central, hoje Avenida Rio Branco. Em 1907, foi construído o trecho entre o Flamengo e o quinhão que não beirava o mar, à volta do Morro da Viúva, ligando a Praia do Flamengo e Botafogo, trecho este que não estava à margem de praias e foi batizado de “Avenida de Ligação”. 
+                        Em 1917, uma década mais tarde, foi renomeado Oswaldo Cruz.                        
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- seu codigo termina aqui -->
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo do Bootstrap aqui, antes do fechamento do "body" -->
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

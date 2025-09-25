@@ -1,7 +1,8 @@
-"""hello URL Configuration
+"""
+URL configuration for hello project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.0/topics/http/urls/
+    https://docs.djangoproject.com/en/5.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,6 +17,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from index.views import index
+from index.views import contato_bs
+from index.views import imagens_bs
+from index.views import locais_bs
+from index.views import sobre_bs
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+]
+
+urlpatterns += [
+    path('', index, name='index'),
+    path('index.html', index, name='index'),
+    path('contato_bs.html', contato_bs, name='contato_bs'),
+    path('imagens_bs.html', imagens_bs, name='imagens_bs'),
+    path('locais_bs.html', locais_bs, name='locais_bs'),
+    path('sobre_bs.html', sobre_bs, name='sobre_bs')
 ]
