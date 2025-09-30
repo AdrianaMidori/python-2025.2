@@ -17,7 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# meus imports
 from index.views import index
+from index.views import locais_bs
+from index.views import imagens_bs
+from index.views import contato_bs
+from index.views import sobre_bs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +30,9 @@ urlpatterns = [
 
 urlpatterns += [
     path('', index, name='index'),
+    path('index.html', index, name='index'),
+    path('locais_bs.html', locais_bs, name='locais_bs'),
+    path('contato_bs.html', contato_bs, name='contato_bs'),
+    path('imagens_bs.html', imagens_bs, name='imagens_bs'),
+    path('sobre_bs.html', sobre_bs, name='sobre_bs')
 ]
