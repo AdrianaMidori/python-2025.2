@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 URL configuration for hello project.
 
@@ -14,8 +15,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+=======
+>>>>>>> 7affcdca35c7b272664d64d51c9db9b76726bed8
 from django.contrib import admin
 from django.urls import path
+from index.views import index
 
 from index.views import index
 from index.views import contato_bs
@@ -25,6 +29,7 @@ from index.views import sobre_bs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name='index'),
 ]
 
 urlpatterns += [

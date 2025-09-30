@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+<<<<<<< HEAD
+=======
+# my applications
+>>>>>>> 7affcdca35c7b272664d64d51c9db9b76726bed8
 INSTALLED_APPS += [
     'index',
 ]

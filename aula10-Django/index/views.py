@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -16,3 +17,11 @@ def locais_bs(request):
 
 def sobre_bs(request):
     return render(request,'sobre_bs.html')
+=======
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse('Olá Mundo!!!')
+
+>>>>>>> 7affcdca35c7b272664d64d51c9db9b76726bed8
