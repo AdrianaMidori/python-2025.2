@@ -35,8 +35,8 @@ class UsuarioManager(BaseUserManager):
 
 
 class Usuario(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(verbose_name="E-mail do usuário",
-                              maxlenght=100, 
+    email = models.EmailField(verbose_name= "E-mail do usuário",
+                              max_length= 100, 
                               unique= True)
     
     is_active = models.BooleanField(verbose_name= "Usuário está ativo",
@@ -49,6 +49,8 @@ class Usuario(AbstractBaseUser, PermissionsMixin):
                                     default = False)
     
     USERNAME_FIELD = 'email'
+
+    objects = UsuarioManager()
 
     class Meta:
         verbose_name = 'Usuário'
