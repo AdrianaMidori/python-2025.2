@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, sans-serif;   
+}
+
+
+h1 {
+    color: rgb(141, 143, 142);
+    text-align: center;
+}
+
+.item {
+    padding: 10px;
+}
+
+.meuForm {
+    margin:5px;
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: rgb(204, 229, 221);
+}
+
+.meuLabel {
+    font-weight: bold;
+}

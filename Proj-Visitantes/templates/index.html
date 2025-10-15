@@ -5,30 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Portaria</title>
-    <link href = "{%static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css"> </href>
+
+    <link href="{% static 'css/estilo.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h2>Portaria works!</h2>
-    <h1>{{ descricao }}</h1>
-    <div>
-        <div>
-            <label>Nome completo: </label> 
+    <!--<h2>Portaria works!!</h2>-->
+    <!--<h1 style="color: red">{{ descricao }}</h1> -->
+
+    <h1> Controle de Portaria</h1>
+    <form name="contato" action="#" method="post" class="meuForm">
+        <div class="item">
+            <div>
+                <label class="meuLabel">Nome Completo:</label>
+            </div>
+            <div>
+                <input type="text" id="nome" name="nome" size="100"
+                placeholder="Digite seu nome">
+            </div>
         </div>
-        <div>
-            <input type="text" id="nome" name="nome">
+        <div class = "item">
+            <div>
+                <label class="meuLabel">CPF:</label>
+            </div>
+            <div>
+                <input type="text" id="cpf" name="cpf" size="11">
+            </div>
         </div>
-    </div>
-    <div>
-        <div>
-            <label>CPF</label> 
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Data de Nascimento:</label>
+            </div>
+            <div>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
         </div>
-        <div>
-            <input type ="text" id="cpf" name="cpf">
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Número da casa a ser visitada:</label>
+            </div>
+            <div>
+                <input type="number" id="numero_casa" name="numero_casa">
+            </div>
         </div>
-    </div>
-     
-     
+
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Placa do veículo:</label>
+            </div>
+            <div>
+                <input type="text" id="placa_veiculo" name="placa_veiculo" size="10">
+            </div>
+        </div>
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Data da visita:</label>
+            </div>
+            <div>
+                <input type="datetime-local" id="data_visita" name="data_visita">
+            </div>
+        </div>
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Horário de autorização de entrada:</label>
+            </div>
+            <div>
+                <input type="datetime-local" id="horario_autorizacao" name="horario_autorizacao">
+            </div>
+        </div>
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Horário de saída:</label>
+            </div>
+            <div>
+                <input type="datetime-local" id="horario_saida" name="horario_saida">
+            </div>
+        </div>
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Nome do morador que autorizou a visita:</label>
+            </div>
+            <div>
+                <input type="text" id="nome_morador" name="nome_morador" size="30">
+            </div>
+        </div>
+        <div class = "item">
+            <div>
+                <label class="meuLabel">Porteiro responsável pelo registro:</label>
+            </div>
+            <div>
+                <input type="text" id="porteiro_responsavel" name="porteiro_responsavel">
+            </div>
+        </div>
+    </form>
+    
 </body>
 
 <script src="{% static 'vendor/jquery/jquery.min.js'%}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
 </html>
