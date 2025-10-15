@@ -17,7 +17,7 @@ class Visitante(models.Model):
     numero_casa = models.PositiveSmallIntegerField (verbose_name = 'Número da casa a ser visitada'
                                  )
     
-    placa_do_veiculo = models.CharField (verbose_name = 'Placa do veículo',
+    placa_veiculo = models.CharField (verbose_name = 'Placa do veículo',
                                          max_length = 7,
                                          blank = True,
                                          null = True)
@@ -26,12 +26,12 @@ class Visitante(models.Model):
                                               auto_now_add = True
                                             )
     
-    horario_de_saida = models.DateTimeField(verbose_name = 'Horário de saída do condomínio',
+    horario_saida = models.DateTimeField(verbose_name = 'Horário de saída do condomínio',
                                               auto_now = False,
                                               blank = True,
                                               null = True
                                             )
-    horario_de_autorizacao = models.DateTimeField(verbose_name = 'Horário de autorização de Entrada',
+    horario_autorizacao = models.DateTimeField(verbose_name = 'Horário de autorização de Entrada',
                                               auto_now = False,
                                               blank = True,
                                               null = True
