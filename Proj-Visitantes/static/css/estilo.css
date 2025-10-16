@@ -22,3 +22,10 @@ h1 {
 .meuLabel {
     font-weight: bold;
 }
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
