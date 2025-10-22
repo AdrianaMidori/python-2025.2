@@ -1,0 +1,10 @@
+Sites para pesquisar sobre comandos em Python e no Django
+Documentação do Python: https://docs.python.org/pt-br/3.14/
+ 
+Documentação DJango: https://docs.djangoproject.com/en/5.2/
+ 
+W3schools Python: https://www.w3schools.com/python/
+ 
+ 
+The official Python documentation.
+ 

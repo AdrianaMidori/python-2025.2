@@ -2,6 +2,30 @@
     font-family: Arial, sans-serif;   
 }
 
+.cabecalho {
+    background-color: rgb(213,216,179);
+    padding: 10px 0;
+    height: 5vw;
+    width:100vw;      
+}
+
+.caixa {
+    width:100vw;
+    margin:0 ;
+ }
+
+ .hmenu {
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+    right: 20px;
+}
+
+.hmenu ul li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
 
 h1 {
     color: rgb(141, 143, 142);
@@ -10,21 +34,47 @@ h1 {
 
 .item {
     padding: 10px;
+    justify-self: left;
 }
 
+.itens {
+    display: flex;
+    /* justify-content: space-around; */
+
+}
 .meuForm {
     margin:5px;
     border-width: 3px;
     border-radius: 10px;
     background-color: rgb(204, 229, 221);
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .meuLabel {
     font-weight: bold;
 }
+#nome{
+    width: 50rem;
+}
 
 .botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.botao {
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    /* margin-top: 20px; */
+}
+
+
+@media only screen and (max-width: 900px){
+    #nome {
+        width: 20rem;
+    }
 }
