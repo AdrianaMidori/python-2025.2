@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_APPS += [
+    'dashboard',
     'usuarios',
     'porteiros',
     'visitantes',

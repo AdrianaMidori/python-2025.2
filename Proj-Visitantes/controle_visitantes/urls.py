@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from usuarios.views import index
+# from usuarios.views import index
+from dashboard.views import index
 from visitantes.views import registrar_visitante
 
 urlpatterns = [
