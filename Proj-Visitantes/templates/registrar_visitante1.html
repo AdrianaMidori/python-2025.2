@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Portaria</title>
+</head>
+<body>
+    <h2>{{ nome_pagina }} </h2>
+    <form method="post">
+        {% for field in form %}
+            <div>
+                {% render_field field placeholder=field.label%}
+            </div>
+        {% endfor %}
+    </form>
+</body>
+
+</html>
