@@ -108,8 +108,8 @@
                             <td>{{ variavel.get_horario_autorizacao }}</td>
                             <td>{{ variavel.get_morador_responsavel }}</td>
                             <td>
-                                <a href="#" >
-                                    Ver informações
+                                <a href="{% url 'informacoes_visitante' id=variavel.id %}"  >
+                                    Ver informações 
                                 </a>
                             </td>
                         </tr>

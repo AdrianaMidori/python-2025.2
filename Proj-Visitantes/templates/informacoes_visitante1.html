@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% load widget_tweaks %}
+
+{% block conteudo %}
+
+<div class = "container">
+    <p> {{nome_pagina}}</p>
+    <form method="post">
+        <div class="form-row">              
+            <div class="form-group col-md-12">
+                <div>
+                    <label> Nome completo: </label>{{ visitante.nome_completo }}
+                </div>
+                <div>
+                   {{ visitante.cpf }} 
+                </div>
+                <div>
+                   {{ visitante.data_nascimento}} 
+                </div>
+                <div>
+                    {{ visitante.numero_casa}}
+                </div>
+                <div>
+                    {{ visitante.placa_veiculo}}
+                </div>
+                <div>
+                    {{ visitante.horario_chegada }}
+                </div>
+                <div>
+                    {{ visitante.horario_saida}}
+                </div>
+                <div>
+                    {{ visitante.get_horario_autorizacao }}
+                </div>
+                <div>
+                    {{ visitante.get_morador_responsavel }}
+                </div>
+                <div>
+                    {{ visitante.registrado_por}}
+                </div>
+            </div>
+        </div>
+    </form>
+    
+</div>
+ 
+    
+    
+    
+
+{% endblock %}
